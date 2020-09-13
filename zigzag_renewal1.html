@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+
+	<html>
+
+		<head>
+
+			<title> 지그재그 - 1등 여성 쇼핑 앱 </title>
+
+				<meta charset= "utf-8">
+				<meta name= "viewport" content= "width = device - width, initial - scale = 1, maximum - scale = 1">
+				<link rel= "shortcut icon" href= "img1/zigzag_logo.ico">
+				<link rel= "stylesheet" href= "https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+  				<link rel= "stylesheet" href= "https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+  				<script src= "https://code.jquery.com/jquery-3.4.1.min.js"> </script>
+  				<script src= "https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"> </script>
+
+	<script>
+
+	$(document).ready(function(){
+
+		$('.bxslider').bxSlider({
+
+			auto: true, //자동으로 애니메이션 시작
+			pager : true, //페이지 표시 보여짐
+			captions : true, //이미지 위에 텍스트를 넣을 수 있음
+			speed: 500, //애니메이션 속도
+			pause: 2000, //애니메이션 유지 시간 (1000 = 1초)
+			mode : 'horizontal', //슬라이드 모드 ('fade'.'horizontal', 'vertical' 이 있음)
+
+		});
+
+	});
+
+
+	$(document).ready(function(){
+
+		var menu_offset = $('nav').offset();
+
+		$(window).scroll(function(){
+
+			if($(document).scrollTop() > menu_offset.top) {
+
+				$('nav').addClass('menu-fixed');
+
+			} else {
+
+				$('nav').removeClass('menu-fixed');
+
+				}	
+
+		});
+
+	});
+
+	</script>
+
+	<style>
+
+		* { margin: 0; padding: 0; box-sizing: border-box; }
+
+		a:link, a:hover, a:visited {
+			color: black;
+			text-decoration: none;
+			text-shadow: 1px 1px 0 #ff80bf;
+		}
+
+		nav { width: 100%;
+			 height: auto; 
+			 background: #ff80bf; }
+
+		nav ul { display: none; 
+				height: auto; }
+
+		nav ul li {
+			display: block;
+			text-align: center;
+			width: 100%;
+			border-bottom: 1px 	#FF5FAB;
+			line-height: 40px;
+		}
+
+		h1 {
+			text-align: center; font-size: 40px; color: black;
+			margin-top: 40px;
+		}
+
+		h2:nth-child(1){
+			color: white; font-size: 40px;
+			line-height: 23px;
+		}
+
+		h2:nth-child(3){
+			color: white; font-size: 40px;
+			line-height: 55px;
+		}
+
+		h2:nth-child(5){
+			color: white; font-size: 15px;
+			line-height: 10px;
+		}
+
+		h2:nth-child(7){
+			color: white; font-size: 15px;
+			line-height: 10px;
+		}
+
+		h3:nth-child(1){
+			font-size: 40px;
+			line-height: 40px;
+		}
+
+		h3:nth-child(3){
+			font-size: 40px;
+			line-height: 40px;
+		}
+
+		h3:nth-child(5){
+			font-size: 40px;
+			line-height: 40px;
+		}
+
+		h3:nth-child(6){
+			font-size: 15px;
+			line-height: 20px;
+		}
+
+		h3:nth-child(8){
+			font-size: 15px;
+			line-height: 20px;
+		}
+
+		h3:nth-child(9){
+			font-size: 15px;
+			line-height: 20px;
+		}
+
+		h3:nth-child(10){
+			font-size: 15px;
+			line-height: 20px;
+		}
+
+		h3:nth-child(12){
+			font-size: 15px;
+			line-height: 20px;
+		}
+
+		h4:nth-child(1){
+			font-size: 40px;
+			line-height: 30px;
+		}
+
+		h4:nth-child(3){
+			font-size: 40px;
+			line-height: 50px;
+		}
+
+		h4:nth-child(6){
+			font-size: 15px;
+			line-height: 15px;
+		}
+
+		h4:nth-child(8){
+			font-size: 15px;
+			line-height: 15px;
+		}
+
+		h4:nth-child(10){
+			font-size: 15px;
+			line-height: 15px;
+		}
+
+		h4:nth-child(11){
+			font-size: 15px;
+			line-height: 5px;
+		}
+
+		h4:nth-child(13){
+			font-size: 15px;
+		}
+
+		h5{
+			font-size: 40px;
+		}
+
+		p {
+			font-size: 15px; 
+			margin-top: 20px;
+			font-weight: bold;
+			text-align: center; 
+		}
+
+		footer{
+           width: 100%; 
+           height: 200px;
+        }
+
+
+		nav { 
+			height: 50px;
+			border-bottom: 1px #FF5FAB;
+		 }
+
+		nav ul {
+			display: block;
+			width: 800px;
+			height: 40px;
+			padding: 0;
+			margin: 0 auto;
+		}
+
+		nav ul li {
+			display: inline-block;
+			width: 20%;
+			border-bottom: 0;
+			border-right: 1px #FF5FAB;
+			margin-right: -5px;
+		}
+
+		nav ul li :last-child {
+			border-right:0;
+		}
+
+		nav ul li a {
+			font-size: 2em;
+			line-height: 50px;
+			font-weight: bold;
+		}
+
+		#top_appstore {
+			margin-left: 1015px;
+			margin-top: 170px;
+		}
+
+		#con4_appstore {
+			margin-left: 495px;
+			margin-top: -35px;
+		}
+
+		#content_image {
+			margin-top: 15px;
+		}
+
+		#top {
+			width: 100%;  height: 500px;
+			background: url('img1/zigzag_mainn.png') no-repeat;
+			background-size: cover;
+		}
+
+ 		#slider {
+ 			width: 100%; 
+ 			height: 550px;
+ 		}
+           
+        #content {
+           	width: 100%; 
+           	height: 550px;
+		}
+
+        #content2 {
+           	width: 100%; 
+           	height: 550px;
+        }
+
+        #content3 {
+           	width: 60%;
+           	height: 360px;
+           	margin-left: 25%;
+           }
+
+		#content4 {
+           	width: 60%;
+           	height: 200px; 
+           	margin-left: 23%;
+           }
+
+        .menu-fixed {
+			position: fixed;
+			top: 0px;
+			left: 0px;
+			z-index: 100;
+		}
+
+		.prod-list li:hover .caption {
+			opacity: 1;
+
+			-moz-transform: translateY(-600px);
+			-o-transform: translateY(-600px);
+			-webkit-transform: translateY(-600px);
+			-ms-transform: translateY(-600px);
+			transform: translateY(-600px);
+		}
+
+		.top_text{
+			position: relative;
+			top: 150px;
+			left: 1015px;
+		}
+
+		.content_text {
+			position: relative;
+			bottom: 380px;
+			left: 500px;
+		}
+
+		.con3_right {
+			position: relative;
+			left: 320px;
+			top: 170px;
+			font-size: 35px;
+			line-height: 55px;
+		}
+
+		.con3_left {
+			position: relative;
+			left: 120px;
+			top: 10px;
+		}
+
+		.con4_text {
+			position: relative;
+			margin-left: 185px;
+			margin-top: -14px;
+			font-size: 18px;
+		}
+
+		.slider_text {
+			position: relative;
+			left: 1000px;
+			top: 150px;
+		}
+
+		.footer_text {
+			margin-left: 30%;
+			margin-top: 20px;
+		}
+
+		.sym {
+			width: 16px; 
+			height: 16px; 
+			margin-top: 20px;
+			margin-left: 150px; 
+		}
+
+		.footer_mark {
+			margin-left: 1100px;
+			bottom: 600px;
+		}
+
+		.prod-list li {
+			padding: 0;
+			margin: 10px;
+			overflow: hidden;
+			position: relative;
+		}
+
+		.prod-list .caption {
+			opacity: 0;
+			z-index: 50;
+			top: 600px;
+			width: 100%;
+			height: 700px;
+			background: rgba(115,115,115,0.5);
+			position : absolute;
+
+			-moz-transition :all 0.2s ease-in-out;
+			-o-transition :all 0.2s ease-in-out;
+			-webkit-transition :all 0.2s ease-in-out;
+			-ms-transition :all 0.2s ease-in-out;
+		}
+
+	</style>
+
+</head>
+
+	<body>
+
+		<nav>
+
+			<ul>
+
+				<li> <a href= "#">
+					<img src= "img1/search_icon.png" onmouseover= "this.src= 'img1/search_icon2.png'"
+						onmouseout= "this.src= 'img1/search_icon.png'" width= "20" height= "20"> 스마트검색 </a> </li>
+
+				<li> <a href= "#">
+					<img src= "img1/store_icon.png" onmouseover= "this.src= 'img1/store_icon2.png'"
+					onmouseout= "this.src= 'img1/store_icon.png'"width= "20" height= "20"> 랭킹 </a> </li>
+
+				<li> <a href= "#">
+					<img src= "img1/squares_icon.png" onmouseover= "this.src= 'img1/squares_icon2.png'"
+					onmouseout= "this.src= 'img1/squares_icon.png'" width= "20" height= "20"> 모아보기 </a> </li>
+
+				<li> <a href= "#">
+					<img src= "img1/heart_icon.png" onmouseover= "this.src= 'img1/heart_icon2.png'"
+					onmouseout= "this.src= 'img1/heart_icon.png'" width= "22" height= "22"> 내상품 </a> </li>
+
+				<li> <a href= "#">
+					<img src= "img1/user_icon.png" onmouseover= "this.src= 'img1/user_icon2.png'"
+					onmouseout= "this.src= 'img1/user_icon.png'" width= "20" height= "20"> 마이페이지 </a> </li>
+
+			</ul>
+
+		</nav>
+
+	    <div id= "top">
+
+	     	<div class= "top_text">
+
+	     		<h2> 나를 위한 패션 </h2> <br>
+	     		<h2> 즐겨 찾기 쉽게 </h2> <br>
+	     		<h2> 여성 쇼핑몰을 한 번에 모아주는 필수 앱! </h2> <br>
+	     		<h2> 넘치는 쇼핑몰 중 진짜 예쁜 것만 스마트하게! </h2> <br>
+
+	    	</div>
+
+	    	<div id= "top_appstore">
+
+	    	 	<a href= "https://apps.apple.com/KR/app/id976131101?mt=8" target= "_blank">
+	    			<img src= "img1/앱스토어.png"> </a>
+
+	    		<a href= "https://play.google.com/store/apps/details?id=com.croquis.zigzag&referrer=af_tranid%3DBq3XiMpFgI_hGtFXoZaI3Q%26shortlink%3D189189a0%26pid%
+	    	 3Dzigzag_website_aos%26af_click_lookback%3D1d%26af_web_id%3D2bbe59b5-c527-4024-8d23-d0f06673d0dc-o%26utm_source%3Dzigzag_website_aos" target= "_blank">
+	    			<img src= "img1/구글플레이.png"> </a>
+
+	    	</div>
+
+	    </div>
+
+		<div id= "slider">
+
+			<ul class= "bxslider">
+
+	     		<li> 
+
+	     	 		<div class= "slider_text" style= "position : absolute;">
+	     	 		<h3> 제일 많은 </h3> <br>
+	     	 		<h3> 여성 쇼핑몰& </h3> <br>
+	     	 		<h3> 즐겨찾기 </h3> <br> <br>
+	     	 		<h3> 3,000개 이상 여성쇼핑몰 매일 업데이트 </h3> <br>
+	     	 		<h3> 내 스타일 쇼핑몰만 담기 </h3> <br>
+	     			</div>
+
+	     	 		<a href= "#"> 
+	     	 			<img src= "img1/즐겨찾기.png" alt= "" title= "즐겨찾기" height= "500"> </a> 	
+
+	     	 	</li>
+
+	     		 <li> 
+
+	     	 		<div class= "slider_text" style= "position: absolute;">
+
+	     	 		<h3> 나를 위한 </h3> <br>
+	     	 		<h3> 취향저격& </h3> <br>
+	     	 		<h3> 아이템 추천 </h3> <br> <br>
+	     	 		<h3> 나의 취향저격 아이템 발굴에 푹 빠져 보세요! </h3> <br>
+	     	 		<h3> 580만 개의 상품 중 내가 원하는 아이템만 골라 </h3> <br>
+	     	 		<h3> 빠르게 검색해보세요! </h3> <br> 
+
+	     	 		</div>
+
+	     	 		<a href= "#">
+	     		 		<img src= "img1/스마트검색.png" alt= "" title="스마트검색" height= "500"> </a> 
+
+	     		 </li>
+
+	     		 <li>
+
+	     	 		<div class= "slider_text" style= "position : absolute;">
+
+	     	 		<h3> 나만의 </h3> <br>
+	     	 		<h3> 쇼핑몰 리스트 </h3> <br> <br>
+	     	 		<h3> 자주 가는 쇼핑몰만 따로 모아 보고, </h3> <br>
+	     	 		<h3> 실시간으로 업데이트되는 신상품을 </h3> <br>
+	     	 		<h3> 누구보다 빠르게 확인하세요! </h3> <br>
+
+	     	 		</div>
+
+	     	 		<a href= "#">
+	     	 			<img src= "img1/신상품.png" alt= "" title= "신상품" height= "500"> </a> 
+	     		 </li>
+
+	     		 <li>
+
+	     	 		<div class= "slider_text" style= "position: absolute;">
+
+	     	 		<h3> 매주 </h3> <br>
+	     	 		<h3> 업데이트 되는 </h3> <br>
+	     	 		<h3> 에디터 픽 </h3> <br> <br>
+	     	 		<h3> 지그재그 에디터가 엄선해서 추천하는, </h3> <br>
+	     	 		<h3> 지금 이 시간 가장 트렌디한 패션 아이템 </h3> <br>
+	     	 		<h3> 제안을 만나보세요! </h3> <br> </div>
+
+	     	 		<a href= "#">
+	     	 			<img src= "img1/모아보기.png" alt= "" title= "모아보기" height= "500"> </a> 
+	     		 </li>
+
+	    	 	<li>
+
+	    	 		<div class= "slider_text" style= "position : absolute;">
+
+	    	 		<h3> 모든 아이템을 </h3> <br>
+	     	 		<h3> 내 상품에 저장! </h3> <br> <br>
+	     	 		<h3> 내가 좋아하는 상품만 모아모아 저장! </h3> <br>
+	     	 		<h3> 특별한 선택으로 가득찬 나만의 옷장을 </h3> <br>
+	     	 		<h3> 지그재그로 만들어보세요! </h3> <br> </div>
+
+	    	 		<a href= "#"><img src= "img1/내상품.png" alt= "" title= "내상품" height= "500"> </a>
+
+	    		 </li>
+
+	 		</ul>
+
+	 	</div>
+
+	 	<div id= "content">
+
+	 		<img src= "img1/실시간성과1.png" height= "530">
+
+	 			<div class= "content_text">
+
+	 				<h4> 실시간 성과와 </h4> <br>
+			 		<h4> 광고 분석을 한눈에 </h4> <br> <br>
+			 		<h4> 쇼핑몰제휴문의 </h4> <br>
+			 		<h4> shop@zigzag.kr </h4> <br> <br>
+			 		<h4> 고객문의 </h4> <br>
+	 				<h4> support@zigzag.kr / 1670-8050 (10:00~18:00) </h4>
+
+	 				<div id= "content_image">
+
+	 					<a href= "https://shop.zigzag.kr/#!/terms" target= "_blank">
+	 						<img src="img1/쇼핑몰입점신청.png"> </a>
+	 					<a href= "https://shop.zigzag.kr/#!/login" target= "_blank">
+	 						<img src= "img1/파트너센터.png"></a> 
+
+	 				</div>
+
+	 			</div>
+
+	 	</div>
+
+	 	<div id= "content2">
+
+			<ul class= "prod-list">
+
+				<li> 
+
+					<img src= "img1/실적.png" width= 100% height= "600">
+
+						<div class= "caption">		
+
+							<h1> 여성 쇼핑몰 3,500 개 </h1>
+							<h1> 누적 등록 상품수 690 만개 </h1>
+							<h1> 누적 거래액 1조 3,000 억원 </h1>
+							<h1> 매월 사용자 250 만명 </h1>
+							<h1> 앱 다운로드 1,700 만 </h1>
+							<p> 2019.09 기준 </p>
+
+						</div>
+
+				</li>
+
+	 	</div>
+
+	 	<div id = "content3">
+
+	 		<div class = "con3_right">
+
+	 			지그재그는 좋아하는 상품을 <br>
+	 			보다 더 쉽게 찾을 수 있는 <br>
+	 		    온라인 쇼핑 환경을 만듭니다.
+
+	 		</div>
+
+	 		<div class ="con3_left">
+
+	 			<h5> ENJOY </h5> <br>
+	 			<h5> FIND </h5> <br>
+	 			<h5> EASY </h5>
+
+	 		</div>
+
+	 	</div>
+
+	 	<div id= "content4">
+
+	 		<hr>
+
+	 		<div class= "sym"> 
+
+	 			<img src= "img1/화살표.png"> 
+
+	 		</div>
+
+	 		<div class= "con4_text">
+
+	 			 지금 바로 지그재그를 만나보세요! 
+
+	 		</div>
+
+	 		 <div id= "con4_appstore">
+
+	    	 	<a href= "https://apps.apple.com/KR/app/id976131101?mt=8" target="_blank">
+	    	       <img src= "img1/앱스토어2.png"> </a>
+	    	   <a href="https://play.google.com/store/apps/details?id=com.croquis.zigzag&referrer=af_tranid%3DBq3XiMpFgI_hGtFXoZaI3Q%26shortlink%3D189189a0%26pid%3Dzigzag_website_aos%26af_click_lookback%3D1d%26af_web_id%3D2bbe59b5-c527-4024-8d23-d0f06673d0dc-o%26utm_source%3Dzigzag_website_aos" target="_blank">
+	    	        <img src="img1/구글플레이2.png"> </a>
+
+	    	</div>
+
+	 	</div>
+
+	 	<footer>
+
+	 		<hr>
+
+	 		<div class= "footer_text">
+
+		 		<h6> 크로키닷컴(주) 서울시 강남구 테헤란로 415 3층 </h6> <br>
+		 		<h6> 대표 서정훈  |   사업자등록번호 214-88-91525  |  통신판매업 서울 강남-03345 </h6> <br>
+		 		<h6> 쇼핑몰제휴문의 shop@zigzag.kr  |  고객문의 support@zigzag.kr / 1670-8050 (10:00~18:00)  | </h6> <br> <br> <br>
+		 		<h6> 개인정보처리방침        채용정보        공고 </h6>
+
+	 		</div>
+
+	 	 	<div class= "footer_mark">
+
+	 			<a href= "https://www.facebook.com/zigzagapp" target= "_blank">
+	 				<img src= "img1/페이스북마크.png"> </a> 
+	 			<a href="https://pf.kakao.com/_eddbM" target= "_blank">
+	 				<img src= "img1/카카오톡마크.png"> </a> 
+	 			<a href="https://www.youtube.com/channel/UC5CTLf-G91F8BCEKMPQEDDg/featured" target= "_blank">
+	 				<img src= "img1/유튜브마크.png"> </a> 
+	 		</div>
+
+ 		</footer>
+
+	</body>
+
+</html>
